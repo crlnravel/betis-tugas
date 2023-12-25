@@ -27,9 +27,7 @@ export default function FormBeliPerahu() {
   const capacityRef = useRef<HTMLInputElement>(null)
   const colorRef = useRef<HTMLSelectElement>(null)
 
-  const beliPerahu = async (event: FormEvent) => {
-    event.preventDefault()
-
+  const beliPerahu = async () => {
     const name = nameRef.current ? nameRef.current.value : ''
     const description = descriptionRef.current ? descriptionRef.current.value : ''
     const capacity = capacityRef.current ? parseInt(capacityRef.current.value) : 0

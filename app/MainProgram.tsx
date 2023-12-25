@@ -41,7 +41,7 @@ function MainProgram() {
       <Tabs.Item active title="Home" icon={HiUserCircle}>
         <div className='grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 gap-5'>
           {daftarPerahu.map((perahu: Perahu) => 
-            <Link href={}>
+            <Link href={`/perahu/${perahu.id}`}>
               <PerahuCard perahu={perahu} />
             </Link>
           )}
